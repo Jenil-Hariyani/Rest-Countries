@@ -1,0 +1,122 @@
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.Country-detailes-container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.back-btn {
+  padding: 8px 25px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+    background-color: var(--elements-color);
+  color: var(--text-color);
+}
+.country-details {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-top: 100px;
+}
+.country-details img {
+  width: 40%;
+  height: 350px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+.details-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 12px;
+  column-gap: 40px;
+  max-height: 180px;
+}
+.details-text p {
+  margin: 0px;
+}
+.Border-Counteries {
+  margin-top: 40px;
+}
+.Border-Counteries b {
+  display: block;
+  margin-bottom: 15px;
+}
+.Border-Counteries {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: baseline;
+}
+
+.Border-Counteries b {
+  display: block;
+  margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.Border-Counteries a {
+  padding: 4px 10px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 15px;
+    background-color: var(--elements-color);
+  color: var(--text-color);
+}
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.loader {
+  width: 35px;
+  height: 35px;
+  border: 3px solid rgba(0,0,0,0.2);
+  border-top: 3px solid rgba(0,0,0,0.6);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+body.dark .loader {
+  border: 3px solid rgba(255,255,255,0.2);
+  border-top: 3px solid rgba(255,255,255,0.7);
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hide {
+  display: none;
+}
+@media (max-width: 940px) {
+  .country-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .details-text {
+    max-height: unset;
+  }
+  .country-details img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
