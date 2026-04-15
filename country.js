@@ -15,7 +15,7 @@ const themeChanger = document.querySelector(".theme-changer");
 const loader = document.querySelector(".loader-container");
 const icon = themeChanger.querySelector("i");
 
-// hide container 
+// hide container
 const container = document.querySelector(".Country-detailes-container");
 container.style.display = "none";
 
@@ -23,9 +23,8 @@ container.style.display = "none";
 fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
   .then((res) => res.json())
   .then(([country]) => {
-
-    loader.classList.add("hide");   // loader બંધ
-    container.style.display = "block"; // content દેખાડવું
+    loader.classList.add("hide"); // loader
+    container.style.display = "block"; // content
 
     flagImg.src = country.flags.svg; // show flag
 

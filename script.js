@@ -8,17 +8,19 @@ const loader = document.querySelector(".loader-container");
 let allCountries = [];
 
 // fetch API
-fetch("https://restcountries.com/v3.1/all?fields=name,flags,population,capital,region")
+fetch(
+  "https://restcountries.com/v3.1/all?fields=name,flags,population,capital,region",
+)
   .then((res) => res.json())
   .then((data) => {
     allCountries = data;
 
-    loader.classList.add("hide"); // 👈 loader બંધ
+    loader.classList.add("hide");
 
     renderCountries(allCountries);
   })
   .catch((err) => {
-    loader.innerText = "Failed to load data 😢";
+    loader.innerText = "Failed to load data ";
     console.error(err);
   });
 
