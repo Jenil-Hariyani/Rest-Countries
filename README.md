@@ -3,7 +3,7 @@
 A modern and responsive **REST Countries Explorer** built using HTML, CSS, and JavaScript.
 The application provides detailed information about countries worldwide with dynamic filtering, search functionality, and theme customization.
 
-🔗 **Live Demo:** https://country-info-web-app.netlify.app/
+🔗 **Live Demo:** https://country-info-web.netlify.app/
 
 
 ## 📌 Overview
