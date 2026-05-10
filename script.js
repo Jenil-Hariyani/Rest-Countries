@@ -16,7 +16,7 @@ fetch(
     allCountries = data;
 
     loader.classList.add("hide");
-
+    FilterByRegion.value = "All";
     renderCountries(allCountries);
   })
   .catch((err) => {
